@@ -41,8 +41,7 @@ Validate lead contact details (email & phone) to
 ensure quality data. 
 High 
 AI 
-Personalizati
- on 
+Personalization 
 Generate custom outreach messages based on 
 lead details and business/campaign context. 
 High 

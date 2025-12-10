@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
-from routes import scraping
+from routes import scraping, gmb_scraping
 
 app = FastAPI(
     title="Okira API",
@@ -31,6 +31,7 @@ def health_check():
     return {"status": "healthy"}
 
 app.include_router(scraping.router)
+app.include_router(gmb_scraping.router)
 
 if __name__ == "__main__":
     import uvicorn
